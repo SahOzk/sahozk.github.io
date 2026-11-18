@@ -1,0 +1,11 @@
+/* Public Backlog page (static copy): layout on top of SWT's styles.css, no SWT shell. */
+body.bl-public{margin:0;min-height:100vh}
+.bl-public #app{max-width:1500px;margin:0 auto;padding:28px clamp(14px,3vw,48px) 60px}
+.bl-public .bl-modal{z-index:200}
+.bl-public .bl-card{cursor:pointer}
+.bl-public .bl-wish-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.bl-public .bl-wish-card img,.bl-public .bl-wish-card .bl-cover-empty{width:100%;aspect-ratio:460/215;object-fit:cover;display:flex;align-items:center;justify-content:center;background:var(--panel2);color:var(--muted);font-weight:800}
+.bl-public .bl-wish-card b{padding:10px 12px;font-size:14px}
+.bl-public .bl-wish-card:hover{border-color:var(--line2)}
+.bl-public .bl-wish-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.bl-public .bl-footer{margin-top:40px;text-align:center;color:var(--muted);font-size:12px}
