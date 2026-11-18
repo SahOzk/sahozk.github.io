@@ -672,3 +672,4 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .bl-live-links{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-left:auto}.bl-live-links small{color:var(--muted)}.bl-live-links a{color:#8fc1ff;font-weight:600;text-decoration:none;font-size:13px}.bl-live-links a:hover{text-decoration:underline}.bl-preview-bar{flex-wrap:wrap;gap:10px 16px}
 /* preview = published page width (public.css: max 1700px, same side padding) */
 .bl-preview-mode #app{max-width:1700px!important;margin:0 auto!important;padding:28px clamp(14px,3vw,48px) 60px!important;box-sizing:border-box}
+.wl-regular{display:block;color:var(--muted);font-size:12px;text-decoration:line-through;opacity:.85;margin-bottom:2px}
