@@ -1,6 +1,6 @@
 /* Public Backlog page (static copy): layout on top of SWT's styles.css, no SWT shell. */
 body.bl-public{margin:0;min-height:100vh}
-.bl-public #app{max-width:1500px;margin:0 auto;padding:28px clamp(14px,3vw,48px) 60px}
+.bl-public #app{max-width:1700px;margin:0 auto;padding:28px clamp(14px,3vw,48px) 60px}
 .bl-public .bl-modal{z-index:200}
 .bl-public .bl-card{cursor:pointer}
 .bl-public .bl-wish-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
