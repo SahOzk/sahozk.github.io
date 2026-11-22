@@ -405,7 +405,7 @@ video.game-about-image::-webkit-media-controls{display:none!important}
 .bl-meta{display:flex;flex-wrap:wrap;gap:5px}
 .bl-chip{font-size:11px;padding:2px 7px;border-radius:4px;background:#1f3646;color:#8fc4e6;white-space:nowrap}
 .bl-chip-count{background:#3a2f12;color:var(--gold)}
-.bl-status-playing{background:#173a2a;color:var(--green)}.bl-status-queued{background:#2a2f36;color:var(--muted)}.bl-status-dropped{background:#3a1d1d;color:#ff9a9a}
+.bl-status-playing{background:#173a2a;color:var(--green)}.bl-status-queued{background:#2a2f36;color:var(--muted)}.bl-status-dropped{background:#3a1d1d;color:#ff9a9a}.bl-status-online{background:#1d2a3a;color:#8fc3ff}
 .bl-star{position:absolute;top:8px;right:8px;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;background:#000b;color:var(--gold);border:1px solid #e6b84c80}
 .bl-count{color:var(--muted);font-size:12px;margin:0 0 8px}
 .bl-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
@@ -747,3 +747,11 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .lucky-dice{flex:none}
 .lucky-hltb{margin:2px 0 8px;font-size:.9rem}
 .lucky-hltb-label{font-weight:600;margin-right:4px}
+.bl-recap{margin-bottom:16px}.bl-recap h4{margin:16px 0 8px;font-size:.95rem}
+.bl-recap-top{list-style:none;margin:0;padding:0;display:grid;gap:8px}.bl-recap-top li{display:grid;grid-template-columns:92px 1fr auto;align-items:center;gap:10px}.bl-recap-top img{width:92px;height:43px;object-fit:cover;border-radius:6px;background:var(--panel2)}.bl-recap-top span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Home page "Dik kapaklar" (portrait 2:3 covers; Bütün oyunlar stays landscape). */
+.bl-portrait .bl-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.bl-portrait .bl-cover{aspect-ratio:3/4}
+.bl-portrait-row{display:flex;gap:10px;align-items:flex-start;margin-top:8px}.bl-portrait-row>div{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.bl-portrait-thumb{flex:none;width:60px;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:var(--panel2)}.bl-portrait-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.bl-portrait .bl-group-covers{aspect-ratio:3/4}
