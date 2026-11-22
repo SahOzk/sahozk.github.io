@@ -711,7 +711,7 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .lucky-col-row small{display:block;opacity:.7}
 .lucky-col-row select{min-width:120px}
 @media (max-width:760px){.lucky-card{grid-template-columns:1fr}}
-.lucky-start{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:18px;border:1px dashed var(--line);border-radius:14px}
+.lucky-start{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:22px 18px;border:1px dashed var(--line);border-radius:14px}
 /* ASF kart kasma: şu an kasılan + kartı kalan oyunlar ızgarası */
 .asf-now{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:18px;align-items:stretch;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:12px;margin:8px 0 18px}
 .asf-now-cover{display:block;aspect-ratio:460/215;border-radius:10px;overflow:hidden;background:#111}
@@ -743,3 +743,7 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .asf-tile-head .asf-tile-meta{display:flex;justify-content:flex-start;gap:14px}
 .asf-tile-meta small{display:inline-flex;align-items:center;gap:5px}
 .asf-tile:hover{border-color:var(--line)}
+.lucky-dice-btn{display:inline-flex;align-items:center;gap:8px;font-size:1.02rem;padding-inline:20px}
+.lucky-dice{flex:none}
+.lucky-hltb{margin:2px 0 8px;font-size:.9rem}
+.lucky-hltb-label{font-weight:600;margin-right:4px}
