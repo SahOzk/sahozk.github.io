@@ -3,7 +3,7 @@
 (()=>{
 const D=window.BACKLOG_DATA||{profile:{sections:[]},items:[],wishlist:[]},P=D.profile||{},ITEMS=D.items||[],BY=new Map(ITEMS.map(i=>[i.id,i]));
 const STATUS={finished:'Bitirdim',playing:'Oynuyorum',queued:'Sırada',dropped:'Bıraktım'};
-const SECTIONS={favorites:'Favoriler',year:'Bu yıl',recent:'Son bitirdiklerim',playing:'Şu an oynadıklarım',full:'%100 tamamladıklarım'};
+const SECTIONS={favorites:'Favoriler',year:'Bu yıl',recent:'Son bitirdiklerim',playing:'Şu an oynadıklarım',online:'Online oyunlar',full:'%100 tamamladıklarım'};
 const TABS=[['home','Ana sayfa'],['all','Bütün oyunlar'],['lists','Listeler'],['stats','İstatistikler']];
 const S={tab:'home',list:'',year:'release',q:'',status:'finished',platform:'all',sort:'order',wq:'',wsort:'added',wlimit:60,modal:null};
 const app=document.getElementById('app');
@@ -33,6 +33,7 @@ function section(key){
  if(key==='year'){const l=sorted(thisYear(),'finished');return[SECTIONS.year,`<div class="bl-year"><div class="bl-year-count"><b>${l.length}</b><span>${new Date().getFullYear()} yılında bitirilen oyun</span></div>${l.length?limited('year',l):''}</div>`]}
  if(key==='recent'){const l=sorted(done(),'finished').slice(0,8);return l.length?[SECTIONS.recent,grid(l)]:null}
  if(key==='playing'){const l=sorted(ITEMS.filter(i=>i.status==='playing'),'order');return l.length?[SECTIONS.playing,grid(l)]:null}
+ if(key==='online'){const l=sorted(ITEMS.filter(i=>i.online),'order');return l.length?[SECTIONS.online,grid(l)]:null}
  if(key==='full'){const l=sorted(ITEMS.filter(i=>i.full),'order');return l.length?[SECTIONS.full,limited('full',l)]:null}
  return null}
 function home(){return(P.sections||[]).map(section).filter(Boolean).map(([t,h])=>`<section class="section bl-section"><div class="section-title"><div><h2>${esc(t)}</h2></div></div>${h}</section>`).join('')}
