@@ -612,6 +612,13 @@ label.is-busy{opacity:.6;pointer-events:none}
 .bl-card.bl-selectable{outline:2px dashed transparent;outline-offset:2px}.bl-card.bl-selectable:hover{outline-color:#4f8fd688}.bl-card.bl-selected{outline:3px solid #4f8fd6;outline-offset:2px}.bl-card.bl-selected::after{content:"✓";position:absolute;top:8px;left:8px;width:26px;height:26px;border-radius:50%;background:#4f8fd6;color:#fff;font-weight:700;display:grid;place-items:center;z-index:3}
 .bl-domain-input{flex:1 1 260px;min-width:0}.bl-dns code{word-break:break-all;font-size:12.5px}
 .bl-grid>[hidden]{display:none!important}
+.bl-fav-cols{display:grid;gap:18px;align-items:start}@media (min-width:1100px){.bl-fav-cols{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.bl-fav-cols>div:last-child{position:sticky;top:12px}}
+.bl-fav-order{max-height:460px;overflow:auto;padding-right:4px;border:1px solid var(--line);border-radius:10px;padding:6px}
+.bl-order-search{width:100%;margin:0 0 8px}
+.bl-group-fold{border:1px solid var(--line);border-radius:10px;margin-bottom:8px;overflow:hidden}.bl-group-fold>summary{display:flex;align-items:center;gap:10px;padding:8px 10px;cursor:pointer;list-style:none}.bl-group-fold>summary::-webkit-details-marker{display:none}
+.bl-group-fold>summary img,.bl-group-fold-ph{width:72px;aspect-ratio:460/215;object-fit:cover;border-radius:6px;background:var(--line);flex:none}.bl-group-fold>summary b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bl-group-fold-arrow{color:var(--muted);transition:transform .15s}.bl-group-fold[open]>summary .bl-group-fold-arrow{transform:rotate(180deg)}.bl-group-fold[open]>summary{border-bottom:1px solid var(--line)}
+.bl-group-fold>.bl-group-edit{border:0;border-radius:0;margin:0}
 .bl-fav-row{cursor:grab}.bl-fav-row.dragging{opacity:.45}.bl-fav-row.drop-target{outline:2px solid #4f8fd6;outline-offset:-2px;border-radius:8px}.bl-fav-label{display:flex;align-items:center;gap:8px;min-width:0}.bl-drag{color:var(--muted);font-size:18px;line-height:1}
 .bl-more[hidden]{display:none!important}
 /* Backlog page editor: own page with tabs and a save bar above the status footer */
