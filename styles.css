@@ -694,7 +694,52 @@ a.btn[href="/backlog"]{white-space:nowrap}
 @media(max-width:480px){.swt-dialog .button-row{flex-direction:column-reverse}.swt-dialog .button-row .btn{width:100%}}
 @media(prefers-reduced-motion:reduce){.swt-dialog-scrim,.swt-dialog{animation:none}}
 .bl-autoplay-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}.bl-autoplay-list li{display:flex;align-items:center;gap:10px}.bl-autoplay-list li small{color:var(--muted);flex:1}
-.bl-note-photo-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.bl-note-photo-strip button{padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#111;cursor:zoom-in;width:112px;height:72px}.bl-note-photo-strip img{width:100%;height:100%;object-fit:cover;display:block}.bl-note-photo-strip button:hover{border-color:#49a3ee}
+.bl-note-photo-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}.bl-note-photo-strip button{padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#111;cursor:zoom-in;aspect-ratio:16/9;width:100%}.bl-note-photo-strip img{width:100%;height:100%;object-fit:cover;display:block}.bl-note-photo-strip button:hover{border-color:#49a3ee}
 .bl-note-photos-edit{margin-top:10px}.bl-note-photos-edit.busy{opacity:.6;pointer-events:none}.bl-note-photo-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}.bl-note-photo{position:relative;width:128px;height:82px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#111;cursor:grab}.bl-note-photo.dragging{opacity:.4}.bl-note-photo-img,.bl-note-photo-img img{display:block;width:100%;height:100%;object-fit:cover}.bl-note-photo-tools{position:absolute;right:4px;bottom:4px;display:flex;gap:3px}.bl-note-photo-tools button{width:24px;height:24px;border-radius:6px;border:1px solid rgba(255,255,255,.25);background:rgba(10,14,20,.8);color:#fff;cursor:pointer;line-height:1;padding:0}.bl-note-photo-tools button:disabled{opacity:.35;cursor:default}.bl-note-photo-tools button[data-note-photo-del]:hover{background:#7a2730}.bl-note-photo-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .asf-quick-status{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:13px}.asf-quick-status select{min-height:38px;border-radius:9px;padding:6px 10px;color:var(--text)}
 .asf-redeem textarea{width:100%;font-family:Consolas,monospace;letter-spacing:.04em;border-radius:9px;padding:10px 12px;color:var(--text);resize:vertical}.asf-redeem-bar{align-items:center;margin:10px 0}.asf-redeem-bad{color:var(--orange)}.asf-redeem-results{list-style:none;margin:8px 0 14px;padding:0;display:grid;gap:6px}.asf-redeem-results li{display:flex;gap:12px;align-items:flex-start;padding:8px 10px;border-radius:8px;background:#292c30;border-left:3px solid var(--line2)}.asf-redeem-results li.ok{border-left-color:var(--green)}.asf-redeem-results li.retry{border-left-color:var(--orange)}.asf-redeem-results li.fail{border-left-color:var(--red)}.asf-redeem-results code{flex:none;color:var(--muted)}.asf-redeem-results span{display:grid;gap:2px}.asf-redeem-results small{color:var(--muted)}
+
+/* Kendimi şanslı hissediyorum */
+.lucky-card{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:20px;align-items:center;background:var(--panel,#202224);border:1px solid var(--line,#2d3035);border-radius:14px;padding:16px}
+.lucky-cover{display:block;aspect-ratio:460/215;border-radius:10px;overflow:hidden;background:#111}
+.lucky-cover img,.lucky-cover .image-placeholder{width:100%;height:100%;object-fit:cover;display:flex;align-items:center;justify-content:center}
+.lucky-body h3{margin:6px 0 14px;font-size:1.35rem}
+.lucky-body .button-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lucky-minor{margin-top:10px}
+.lucky-cols{display:grid;gap:6px;margin:12px 0}
+.lucky-col-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 10px;border:1px solid var(--line,#2d3035);border-radius:10px}
+.lucky-col-row small{display:block;opacity:.7}
+.lucky-col-row select{min-width:120px}
+@media (max-width:760px){.lucky-card{grid-template-columns:1fr}}
+.lucky-start{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:18px;border:1px dashed var(--line);border-radius:14px}
+/* ASF kart kasma: şu an kasılan + kartı kalan oyunlar ızgarası */
+.asf-now{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:18px;align-items:stretch;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:12px;margin:8px 0 18px}
+.asf-now-cover{display:block;aspect-ratio:460/215;border-radius:10px;overflow:hidden;background:#111}
+.asf-now-cover img,.asf-now-cover .image-placeholder,.asf-tile-cover img,.asf-tile-cover .image-placeholder{width:100%;height:100%;object-fit:cover;display:flex;align-items:center;justify-content:center}
+.asf-now-body{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:4px 6px}
+.asf-now-body h4{margin:0;font-size:1.3rem}
+.asf-now-meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.asf-now-meta span{display:flex;flex-direction:column;gap:2px}
+.asf-now-meta small{opacity:.7}
+.asf-now-meta b{font-size:1.15rem}
+.asf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:8px}
+.asf-tile{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);color:inherit;text-decoration:none}
+.asf-tile:hover{border-color:var(--blue)}
+.asf-tile-head{display:flex;flex-direction:column;gap:3px;padding:8px 10px;border-bottom:1px solid var(--line)}
+.asf-tile-head b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.92rem}
+.asf-tile-head span{display:flex;justify-content:space-between;gap:8px}
+.asf-tile-head small{opacity:.75}
+.asf-tile-cover{display:block;aspect-ratio:460/215;background:#111}
+@media (max-width:760px){.asf-now{grid-template-columns:1fr}}
+.asf-farm-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.asf-farm-head p{margin:0}
+.asf-now-body{justify-content:center;gap:14px}
+.asf-now-meta{justify-content:flex-start;gap:36px}
+.asf-now-meta span{flex-direction:row;align-items:baseline;gap:6px;padding:6px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)}
+.asf-now-meta small{font-size:.85rem}
+.asf-ico{width:1.05em;height:1.05em;flex:none;opacity:.8;vertical-align:-.15em}
+.asf-now-meta span{align-items:center}
+.asf-now-meta .asf-ico{width:1.2em;height:1.2em}
+.asf-tile-head .asf-tile-meta{display:flex;justify-content:flex-start;gap:14px}
+.asf-tile-meta small{display:inline-flex;align-items:center;gap:5px}
+.asf-tile:hover{border-color:var(--line)}
