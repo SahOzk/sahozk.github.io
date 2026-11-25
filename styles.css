@@ -811,4 +811,11 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .level-gone{opacity:.6}.level-gone-note{font-size:12px;margin:0}
 .level-hidden-note{margin-top:14px;font-size:13px}
 .link-button{background:none;border:0;padding:0;color:var(--blue);font:inherit;cursor:pointer;text-decoration:underline}
+.level-confirm{margin-top:4px}.level-confirm-notes{margin:10px 0 14px;padding-left:20px;font-size:13px;line-height:1.55}.level-confirm-notes li{margin:3px 0}
+.level-buy{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}.level-buy h3{margin:0 0 6px;display:flex;align-items:center;gap:8px}.level-buy p{margin:4px 0;font-size:13px}
+.level-buy.waiting_mobile,.level-buy.need_price_ok,.level-buy.partial{border-color:rgba(255,170,80,.55)}.level-buy.done{border-color:rgba(80,220,140,.5)}.level-buy.failed{border-color:rgba(255,111,117,.5)}
+.level-buy h3 .spinner{width:16px;height:16px;border-width:2px}
+.level-buy-mobile{padding:8px 10px;border-radius:8px;background:rgba(255,170,80,.12);font-weight:600}
+.level-buy-steps{margin:8px 0 4px;padding-left:20px;font-size:12px;line-height:1.5;max-height:180px;overflow:auto}
+.level-history{margin-top:14px;font-size:13px}.level-history summary{cursor:pointer;color:var(--muted)}.level-history ul{margin:6px 0 0;padding-left:20px}
 .level-drops-box{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(73,215,238,.35);border-radius:8px;background:rgba(73,215,238,.07);font-size:13px;line-height:1.5}
