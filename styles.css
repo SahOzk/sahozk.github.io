@@ -828,3 +828,8 @@ a.btn[href="/backlog"]{white-space:nowrap}
 .level-buy-steps{margin:8px 0 4px;padding-left:20px;font-size:12px;line-height:1.5;max-height:180px;overflow:auto}
 .level-history{margin-top:14px;font-size:13px}.level-history summary{cursor:pointer;color:var(--muted)}.level-history ul{margin:6px 0 0;padding-left:20px}
 .level-drops-box{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(73,215,238,.35);border-radius:8px;background:rgba(73,215,238,.07);font-size:13px;line-height:1.5}
+
+/* Fırsat Keşfi: En iyi / Tüm fırsatlar sekmeleri (28 Kasım 2026) */
+.disc-views{margin-bottom:6px}
+.disc-views .chip small{margin-left:6px;opacity:.7;font-weight:600}
+.best-rank{display:inline-block;min-width:2.2em;padding:1px 6px;margin-right:4px;border-radius:6px;background:var(--panel3);color:var(--blue);font-size:.82em;font-weight:700;text-align:center;vertical-align:1px}
